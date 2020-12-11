@@ -1,0 +1,121 @@
+<html>
+  <head>
+    <title>Personal Book Library | About </title>
+    <meta name="description" content="About Personal Library; Book Library Dante" />
+    <link
+      id="favicon"
+      rel="icon"
+      href=" "
+      type="image/x-icon"
+    />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/public/style.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body>
+    
+    <header>
+      
+<div class="topnav" id="myTopnav">
+  <a href="/" class="active">Home</a>
+  <a href="#contact">Contact</a>
+  <a href="/about">About</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+    </header>
+    <div id="userstories">
+      <h2>About Personal Library</h2>
+      <p>
+        How to use it
+      </p>
+       <hr style="margin: 50px" />
+      <ol>
+        <li>
+          You can make a <b>post</b> request within the API test section, in order to pass a new book entry section at [URL]/api/books, to the database 
+          and it will be returned as an object with 
+          a unique code
+          <code>_id</code>.
+        </li>
+        
+        <li>
+         Too check for "books" and or "comments" stored on the database, you can make a <b>get</b> 
+          request at [URL]/api/books to retrieve an aray of all books
+          containing <code>title</code>, <code>_id</code>, &
+          <code>commentcount</code>.
+        </li>
+        
+        <li>
+          To get a single "book's" details you can make a  <b>get</b> request at [URL]/api/books/{_id} to retrieve a single object of a
+          book containing <code>title</code>, <code>_id</code>, & an array of
+          <code>comments</code> (empty array if no comments present).
+        </li>
+        
+        <li>
+          You make a <b>post</b> request that stores comments with corresponding book on the MongoDB database
+          and add comment form
+        </li>
+        
+        <li>
+          Tou can <b>delete</b> /api/books/{_id}, in order to delete a book from the
+          collection. Simply click delete bottom to remove book posted and wait for 'delete successful' (if successful) message to return.
+        </li>
+       
+        <li>
+          You can also <b>delete</b> all books
+          in the database.Which will return message 'complete delete successful', if
+          successful.
+        </li>
+      </ol>
+      
+      <br/>
+      
+       <i>
+          Please note that nothing from this website will be cached on the clients local computer as a security
+          measure.
+        </i>
+      <br />
+      <img
+        src="https://cdn.gomix.com/d7932c52-287f-4dae-b175-631fef453000%2FScreen%20Shot%202016-12-16%20at%201.35.56%20AM.png"
+      />
+    </div>
+     <script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+     <footer>
+      <div class="footer">
+        <div class="footer container">
+      <h2 class="footer-h1">Personal Library</h2>
+      <div class="social-media">
+        <div class="social-media-item">
+          <a href="https://github.com/DanteLentsoe" target="blank_" class="icon-link"><i class="fab fa-github"></i></a>
+        </div>
+        <div class="social-media-item">
+          <a href="https://www.linkedin.com/in/dante-lentsoe-2b6566148/" target="blank_" class="icon-link"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <div class="social-media-item">
+          <a href="https://dantelentsoe.netlify.app/" target="blank_" class="icon-link"><i class="fab fa-dev"></i></a>
+        </div>
+      </div>
+      <p>Copyright © 2020 Developed by <a href="https://dantelentsoe.netlify.app/" class="name-link" style="text-decoration:none; color:pink;"> Dante Lentsoe. </a> All rights reserved</p>
+    </div>
+      </div>
+    </footer>
+  </body>
+</html>
